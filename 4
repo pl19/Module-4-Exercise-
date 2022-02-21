@@ -1,0 +1,21 @@
+import numpy as np
+deaths = np.array([[344, 2345],
+                   [4345, 253]])
+ us_deaths = deaths[:,0]
+ print('1\n',us_deaths)
+gb_deaths = deaths[:,1]
+print('\n2\n',gb_deaths)
+battle_2_USD = deaths[1,0]
+print('\n3\n',battle_2_USD)
+deaths_1 = deaths.copy()
+deaths_1.sort(axis = 0)
+print('\n4\n',deaths_1)
+deaths_2 = deaths.copy()
+deaths_2.sort(axis = 1)
+print('\n5\n',deaths_2)
+deaths_swap = deaths.T
+print('\n6\n',deaths_swap)
+tot_deaths = deaths.sum()
+print('\n7\n',tot_deaths)
+deaths[1,1] = 2349
+print('\n8\n',deaths)
